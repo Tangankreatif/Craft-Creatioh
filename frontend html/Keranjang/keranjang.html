@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Keranjang</title>
+<link rel="stylesheet" href="css/keranjang.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+</head>
+<body style="background-color: #E6E6E6;">
+    
+    <div class="container-fluid py-4" style="background-color: #f7f7f7;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <img src="img/Logo.png" class="img-fluid" alt="logo" style="max-width: 60%;">
+                </div>
+                <div class="col-8">
+                    <div class = "navbar justify-content-center px-12">
+                        <nav>    
+                            <a class = "nav-non mx-2" href="#beranda">BERANDA</a>
+                            <a class="nav-active mx-2" href="#produk">PRODUK</a>
+                            <a class="nav-non mx-2" href="#pengumuman">PENGUMUMAN</a>
+                            <a class="nav-non mx-2" href="#tentang">TENTANG</a>
+                            
+                        </nav>
+                        </div>
+                </div>
+                <div class="col-1">
+                    <a href="#cart"><i class="fas fa-shopping-cart fa-lg" style="color: #131313;" ></i></a>
+                </div>
+                <div class="col-1">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-lg" style="color: #131313;"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user px-2"></i>Profil</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear px-2"></i>Pengaturan</a></li>
+                          <li><a class="dropdown-item" href="#" style="color: red;"><i class="fa-solid fa-right-from-bracket px-2"></i>Keluar</a></li>
+                        </ul>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid my-4">
+        <div class="container rounded" style="background-color: #f7f7f7; font-family: Montserrat; align-items: center;">
+            <div class="row p-3">
+                <div class="col-5">
+                    <form id="formSelectAll">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="selectAll">
+                          <label class="form-check-label" for="selectAll">
+                            Pilih Semua
+                          </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-2 offset-1">
+                    harga satuan
+                </div>
+                <div class="col-2">
+                    Kuantitas
+                </div>
+                <div class="col-2">
+                    Harga Total
+                </div>
+            </div>
+        </div>
+        <!--Grid 7,8 & 9,10 & 11,12-->
+
+        <div class="container rounded my-4" style="background-color: #f7f7f7; font-family: Montserrat;">
+            <div class="row p-3" style="align-items: center;">
+                <div class="col-2">
+                    <form id="formCheckboxes">
+                        <div class="form-check">
+                          <input class="form-check-input checkbox-item" type="checkbox" value="" id="checkbox1">
+                          <label class="form-check-label" for="checkbox1">
+                            <img src="img/image1.png" alt="gambar" class="img-fluid">
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-3">
+                        <p><strong>Kotak Kado dari Kardus Bekas</strong></p>
+                    </div>
+                    <div class="col-2 offset-1">
+                        <p>Rp.32.000</p>
+                    </div>
+                    <div class="col-2">
+                        <div class="quantity-selector">
+                            <button class="btn btn-outline-success" id="decrement">-</button>
+                            <input type="text" id="quantity" value="1" readonly>
+                            <button class="btn btn-outline-success" id="increment">+</button>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p>Rp.32.000</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row p-3" style="align-items: center;">
+                    <div class="col-2">
+                        <form id="formCheckboxes">
+                            <div class="form-check">
+                              <input class="form-check-input checkbox-item" type="checkbox" value="" id="checkbox1">
+                              <label class="form-check-label" for="checkbox1">
+                                <img src="img/image4.png" alt="gambar" class="img-fluid">
+                              </label>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-3">
+                            <p><strong>Bingkai Foto dari Kertas Nasi</strong></p>
+                        </div>
+                        <div class="col-2 offset-1">
+                            <p>Rp.23.000</p>
+                        </div>
+                        <div class="col-2">
+                            <div class="quantity-selector">
+                                <button class="btn btn-outline-success" id="decrement">-</button>
+                                <input type="text" id="quantity" value="1" readonly>
+                                <button class="btn btn-outline-success" id="increment">+</button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <p>Rp.23.000</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row p-3" style="align-items: center;">
+                        <div class="col-2">
+                            <form id="formCheckboxes">
+                                <div class="form-check">
+                                  <input class="form-check-input checkbox-item" type="checkbox" value="" id="checkbox1">
+                                  <label class="form-check-label" for="checkbox1">
+                                    <img src="img/image6.png" alt="gambar" class="img-fluid">
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="col-3">
+                                <p><strong>Rak Mini dari Stik Es Krim</strong></p>
+                            </div>
+                            <div class="col-2 offset-1">
+                                <p>Rp.30.000</p>
+                            </div>
+                            <div class="col-2">
+                                <div class="quantity-selector">
+                                    <button class="btn btn-outline-success" id="decrement">-</button>
+                                    <input type="text" id="quantity" value="1" readonly>
+                                    <button class="btn btn-outline-success" id="increment">+</button>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <p>Rp.30.000</p>
+                            </div>
+                        </div>
+            </div>
+        </div>
+      </div>
+<br>
+<br>
+<br>
+<br>
+<!--Footer-->
+      <footer class="container-fluid py-3 fixed-bottom" style="background-color: #f7f7f7;box-shadow: 0px -10px 15px rgba(0, 0, 0, .1); font-family: Montserrat; align-items: center;">
+        <div class="container">
+            <div class="row py-3" style="align-items: center;">
+                <div class="col-3 offset-3">
+                    <a href="" style="text-decoration: none; color: #131313;">Hapus Semua</a>
+                </div>
+                <div class="col-3">
+                    Total (0 Produk): <span style="color: #8EEE42;"><strong>Rp.0</strong></span>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-success">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const decrementButton = document.getElementById('decrement');
+            const incrementButton = document.getElementById('increment');
+            const quantityInput = document.getElementById('quantity');
+
+            decrementButton.addEventListener('click', () => {
+                let currentValue = parseInt(quantityInput.value);
+                if (currentValue > 1) {
+                    quantityInput.value = currentValue - 1;
+                }
+            });
+
+            incrementButton.addEventListener('click', () => {
+                let currentValue = parseInt(quantityInput.value);
+                quantityInput.value = currentValue + 1;
+            });
+        });
+    </script>      
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  
+
+    <!-- Custom JS for Select All functionality -->
+  <script>
+    document.getElementById('selectAll').addEventListener('change', function() {
+      const checkboxes = document.querySelectorAll('.checkbox-item');
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = this.checked;
+      });
+    });
+  </script>
+
+</body>
+</html>

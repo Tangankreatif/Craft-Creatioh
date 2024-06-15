@@ -1,0 +1,415 @@
+nav a{
+ 
+}
+
+.navbar a{
+    color: #131313;
+    text-decoration: none;  
+    font-family: "Montserrat";
+}
+.navbar a:hover{
+    border-bottom: 3px solid #cae7b2;
+
+}
+.nav-active {
+    font-weight: bold; 
+    border-bottom: 3px solid #8EEE42;
+  }
+
+
+
+  .search {
+    --padding:10px;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: #ececec;
+    transition: box-shadow 0.25;
+}   
+
+ .search:focus-within{
+    box-shadow: 0 0 4px #8EEE42;
+ }
+
+ .search-input {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: #131313;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300PX;
+}
+
+.search-input::placeholder,
+.search-icon {
+    color: #a5a5a5;
+}
+
+
+.main-content{
+display: flex;
+align-items: center;
+position: relative;
+margin-left: 100px;
+top: 100px;
+
+.container-text{
+    position: relative;
+
+.header{
+font-family: "Montserrat";      
+color: #124E31;
+font-size: 25px;
+    }
+.header-two {
+    font-family: "Montserrat";
+    color: #124E31;
+    position: relative;
+    top: 30px;
+    
+}   
+.header-variaty{
+    color: #8EEE42;
+    font-size: 55px;
+}     
+.header-three{
+    font-family: "Montserrat";
+    color: #124E31;
+    position: relative;
+    bottom: 25px;
+}
+}
+
+.container-img{
+display: flex;
+align-items: flex-end;
+.img1{
+    width: 700px;
+    position: relative;
+    
+}
+}
+}
+/* -HORIZONTAL SCROLL IMAGE- */
+
+.main-scroll-div {
+
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+.cover {
+    position: relative;
+    width: 100%;
+    
+}
+
+
+
+.scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.child {
+    min-width: 343px;
+    height: 0%;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid rgba(207, 201, 201, .3);
+    overflow: hidden;
+    background-color: #F7F7F7;
+}
+
+ 
+.scroll-images::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.child-img {
+    width: 100%;
+    height: 100%;
+}
+.icon {
+    color: #8EEE42;
+    background-color: #F7F7F7;
+    font-size: 50px;
+    outline: none;
+    border: none;
+    padding: opx 20px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #badf9b;
+}
+
+.container-button {
+    float: left;
+    padding: 10px 25px;
+    border-radius: 100px;
+    background : linear-gradient(to top right, #bdf14d 0%, #e2f14d 100%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.container-button a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #124E31;
+    font-family: "Montserrat";
+}
+
+.container-button:hover{
+    background: #bdf14d;
+}
+
+.aboutus{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 50px;
+
+.isi-text h2{
+    text-align: center;
+    font-family: "Montserrat";
+    color: #124E31;
+    margin-left: 120px;
+    font-size: 50px;
+}
+
+.isi-text p{
+    text-align: justify;
+    width: 550px;
+    font-family: "Montserrat";
+    margin-left: 120px;
+    color: #124E31;
+
+.creation-color{
+    color: #8EEE42;   
+}
+}
+.container-button2 {
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 300px;
+    padding: 10px 25px;
+    border-radius: 100px;
+    background : linear-gradient(to top right, #bdf14d 0%, #e2f14d 100%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.container-button2 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #124E31;
+    font-family: "Montserrat";
+}
+
+.container-button2:hover{
+    background: #bdf14d;
+}
+}
+
+/*CLIEN CONTENT*/
+.client-page{
+    margin-top: 80px;
+}
+
+.cards-container{
+margin-top: px;
+.flip-card {
+    background-color: transparent;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #124E31;
+    color: #F7F7F7;
+    transform: rotateY(180deg);
+  } 
+}
+.flip-card-back p{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 12px
+}
+.flip-card-back h1{
+    text-align: center;
+    font-family: "Montserrat";
+    color: #8EEE42;
+}
+
+.judul-client{
+    font-family: "Montserrat";
+    text-align: center;
+    color: #124E31;
+    font-size: 20px;
+
+    .text-ijo{
+        color: #8EEE42;
+    }
+}
+
+
+/* INI FOOTER*/
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #124E31;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0px
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    font-family: "Montserrat";
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #8EEE42;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+    font-family: "Montserrat";
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+    border: 1px solid #8EEE42;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.col-3 .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+  border: 1px solid #8EEE42;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.col-3 .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+ .alamat-dengan-ikon a{
+  text-decoration: none;
+  color: #f7f7f7;
+ }
+
+ .halaman a{
+  text-decoration: none;
+  color: #f7f7f7;
+ }
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}

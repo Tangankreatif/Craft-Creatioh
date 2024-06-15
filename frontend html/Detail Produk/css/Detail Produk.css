@@ -1,0 +1,161 @@
+.navbar a{
+    color: #131313;
+    text-decoration: none;  
+    font-family: "Montserrat";
+}
+.navbar a:hover{
+    border-bottom: 3px solid #cae7b2;
+
+}
+.nav-active {
+    font-weight: bold; 
+    border-bottom: 3px solid #8EEE42;
+  }
+
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+}
+.quantity-selector button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+}
+.quantity-selector input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin: 0 5px;
+    font-size: 1.25rem;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+
+* INI FOOTER*/
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #124E31;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0px
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+    font-family: "Montserrat";
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #8EEE42;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+    font-family: "Montserrat";
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+    border: 1px solid #8EEE42;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.col-3 .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+  border: 1px solid #8EEE42;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.col-3 .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+ .alamat-dengan-ikon a{
+  text-decoration: none;
+  color: #f7f7f7;
+ }
+
+ .halaman a{
+  text-decoration: none;
+  color: #f7f7f7;
+ }
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.like-button {
+    cursor: pointer;
+    color: rgb(202, 202, 202);/* Default color */
+  }
+  .liked {
+    color: #8EEE42; /* Liked color */
+  }

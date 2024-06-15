@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Checkout</title>
+
+    <link rel="stylesheet" href="css/Checkout.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    
+
+</head>
+<body style="background-color: #f7f7f7; font-family: Montserrat;">
+
+    <div class="container-fluid py-4" style="background-color: #f7f7f7;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <img src="img/Logo.png" class="img-fluid" alt="logo" style="max-width: 60%;">
+                </div>
+                <div class="col-8">
+                    <div class = "navbar justify-content-center px-12">
+                        <nav>    
+                            <a class = "nav-non mx-2" href="#beranda">BERANDA</a>
+                            <a class="nav-active mx-2" href="#produk">PRODUK</a>
+                            <a class="nav-non mx-2" href="#pengumuman">PENGUMUMAN</a>
+                            <a class="nav-non mx-2" href="#tentang">TENTANG</a>
+                            
+                        </nav>
+                        </div>
+                </div>
+                <div class="col-1">
+                    <a href="#cart"><i class="fas fa-shopping-cart fa-lg" style="color: #131313;" ></i></a>
+                </div>
+                <div class="col-1">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bars fa-lg" style="color: #131313;"></i>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user px-2"></i>Profil</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear px-2"></i>Pengaturan</a></li>
+                          <li><a class="dropdown-item" href="#" style="color: red;"><i class="fa-solid fa-right-from-bracket px-2"></i>Keluar</a></li>
+                        </ul>
+                      </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+    
+    <div class="container-fluid">
+        <div class="container py-4">
+            <div class="row" style="text-align: center;">
+                <div class="col-12">
+                    <h3 style="color: #124E31;"><strong>CHECKOUT</strong></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="align-items: center; color: #124E31;">
+                <div class="col-5">
+                    <i class="fa-solid fa-location-dot"></i> <span class="px-2"><strong>Alamat Pengiriman</strong></span>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-2">
+                    <p><strong>Jackson</strong></p>
+                </div>
+                <div class="col-2">
+                    <p><strong>08273482903</strong></p>
+                </div>
+                <div class="col-4">
+                    <p><strong>jl semangka 2 no 87</strong></p>
+                </div>
+                <div class="col-2 offset-2" style="text-align: end;">
+                    <a href=""><p>Ubah</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-3">
+                    <h4 style="color: #124E31;"><strong>Produk Dipesan</strong></h4>
+                </div>
+                
+                <div class="col-2 offset-3" style="text-align: center;">
+                    <p>Harga Satuan</p>
+                </div>
+                <div class="col-2" style="text-align: center;">
+                    <p>Jumlah</p>
+                </div>
+                <div class="col-2" style="text-align: center;">
+                    <p>Total Harga</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/image1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-3">
+                    <h4><strong>Kotak Kado dari Kardus Bekas</strong></h4>
+                </div>
+                <div class="col-2 offset-1" style="text-align: center;">
+                    <p><strong>Rp.32.000</strong></p>
+                </div>
+                <div class="col-2" style="text-align: center;">
+                    <p><strong>2</strong></p>
+                </div>
+                <div class="col-2"style="text-align: center;">
+                    <p><strong>Rp.64.000</strong></p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-2">
+                    <p>Catatan :</p>
+                </div>
+                <div class="col-3">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#noteModal">
+                        Tambahkan Catatan
+                    </button>
+                </div>
+                <div class="col-3">
+                    <p>Opsi Pengiriman :</p>
+                </div>
+                <div class="col-3">
+                    <p><strong>Reguler</strong></p>
+                    <p>Estimasi tiba: 13-14 Apr</p>
+                </div>
+                <div class="col-1" style="text-align: end;">
+                    <a href=""><p>Ubah</p></a>
+                </div>
+
+<!-- Modal -->
+<div class="modal fade" id="noteModal" tabindex="-1" aria-labelledby="noteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="noteModalLabel">Tambahkan Catatan</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="noteForm">
+            <div class="mb-3">
+              <label for="itemName" class="form-label">Nama Barang</label>
+              <input type="text" class="form-control" id="itemName" required>
+            </div>
+            <div class="mb-3">
+              <label for="itemNote" class="form-label">Catatan</label>
+              <textarea class="form-control" id="itemNote" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 py-3" style="color: #124E31;">
+                    <h4><strong>Metode Pembayaran</strong></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentOption" id="bankTransfer" value="bankTransfer">
+                    <label class="form-check-label" for="bankTransfer">
+                      Transfer Bank
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentOption" id="eWallet" value="eWallet">
+                    <label class="form-check-label" for="eWallet">
+                      E-Wallet
+                    </label>
+                  </div>
+                
+                  <!-- Form for Bank Transfer -->
+                  <div id="bankTransferForm" class="payment-form mt-3">
+                    <h4>Form Transfer Bank</h4>
+                    <div class="mb-3">
+                      <label for="bankName" class="form-label">Nama Bank</label>
+                      <input type="text" class="form-control" id="bankName">
+                    </div>
+                    <div class="mb-3">
+                      <label for="accountNumber" class="form-label">Nomor Rekening</label>
+                      <input type="text" class="form-control" id="accountNumber">
+                    </div>
+                  </div>
+                
+                  <!-- Form for E-Wallet -->
+                  <div id="eWalletForm" class="payment-form mt-3">
+                    <h4>Form E-Wallet</h4>
+                    <div class="mb-3">
+                      <label for="walletProvider" class="form-label">Provider E-Wallet</label>
+                      <input type="text" class="form-control" id="walletProvider">
+                    </div>
+                    <div class="mb-3">
+                      <label for="walletNumber" class="form-label">Nomor E-Wallet</label>
+                      <input type="text" class="form-control" id="walletNumber">
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <p>Subtotal Harga : <strong>Rp.64.000</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <p>Total Ongkos Kirim : <strong> Rp.10.000</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <h4 style="color: #8EEE42;"><strong>Total Pembayaran : Rp.74.000</strong></h4>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-4 offset-8" style="text-align: end;">
+                    <a href="Rincian Transaksi/Transaksi.html" class="btn btn-success">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+
+<div class="container-fluid" style="background-color: #124E31;">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 my-5">
+                <img src="img/Logo2.png" alt="" class="img-fluid offset-5" width="40">
+                <div class="deskripsi-1 py-5" style="color: #f7f7f7; font-family: 'Montserrat'";>
+                    <h3 style="text-align: center;"><strong>Perusahaan</strong></h3>
+                    <p style="text-align: justify;">Website ini membantu anda Menginspirasi dan Berkreasi. Tingkatkan Keterampilan Anda. Ubah Dunia Anda.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 offset-2 my-5 py-5" style="text-align: left; font-family: 'Montserrat'; color: #f7f7f7; ">
+                <h3><strong>Alamat</strong></h3>
+            
+            <div class="alamat-dengan-ikon py-3">
+                <i class="fa-solid fa-location-dot fa-2x px-2 my-3"></i> <span>Indonesia</span>
+              </div>
+              <div class="alamat-dengan-ikon">
+                <i class="fa-solid fa-phone fa-2x px-2 my-3"></i> <span>0821-1111-2222</span>
+              </div>
+              <div class="alamat-dengan-ikon">
+                <i class="fa-solid fa-envelope fa-2x px-2 my-3"></i> <a href="mailto:craftcreation@gmail.com">craftcreation@gmail.com</a>
+              </div>
+            </div>
+            <div class="col-3 offset-1 my-5 py-5" style="font-family: Montserrat; color: #f7f7f7;">
+                <h3><strong>Halaman</strong></h3>
+                <div class="halaman py-5 px-2">
+                    <a href=""><p>Beranda</p></a>
+                    <a href=""><p>Produk</p></a>
+                    <a href=""><p>Pengumuman</p></a>
+                    <a href=""><p>Tentang</p></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const bankTransferOption = document.getElementById('bankTransfer');
+          const eWalletOption = document.getElementById('eWallet');
+          const bankTransferForm = document.getElementById('bankTransferForm');
+          const eWalletForm = document.getElementById('eWalletForm');
+      
+          bankTransferOption.addEventListener('change', function () {
+            if (this.checked) {
+              bankTransferForm.style.display = 'block';
+              eWalletForm.style.display = 'none';
+            }
+          });
+      
+          eWalletOption.addEventListener('change', function () {
+            if (this.checked) {
+              eWalletForm.style.display = 'block';
+              bankTransferForm.style.display = 'none';
+            }
+          });
+        });
+      </script> 
+
+
+
+<!-- Script untuk menangani pengiriman formulir -->
+<script>
+  document.getElementById('noteForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const itemName = document.getElementById('itemName').value;
+    const itemNote = document.getElementById('itemNote').value;
+    
+    console.log('Nama Barang:', itemName);
+    console.log('Catatan:', itemNote);
+    
+    // Tambahkan logika untuk menyimpan data atau melakukan tindakan lain di sini
+
+    // Tutup modal setelah menyimpan catatan
+    var modal = bootstrap.Modal.getInstance(document.getElementById('noteModal'));
+    modal.hide();
+    
+    // Reset form setelah menyimpan catatan
+    document.getElementById('noteForm').reset();
+  });
+</script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>

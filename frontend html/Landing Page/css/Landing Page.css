@@ -1,0 +1,27 @@
+.container-button {
+    float: left;
+    padding: 10px 25px;
+    border-radius: 100px;
+    background : linear-gradient(to top right, #bdf14d 0%, #e2f14d 100%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.container-button a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #124E31;
+    font-family: "Montserrat";
+}
+
+.container-button:hover{
+    background: #bdf14d;
+}
+
+.myimage{
+    position: absolute;
+
+}
+
+.item{
+   padding-left: 150px;
+}
